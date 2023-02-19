@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url('https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .registro {
+    width: 600px;
+    background: #fcfcfc;
+    padding: 60px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 8px;
+    font-family: 'calibri';
+    color: rgb(0, 0, 0);
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .registro h4 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .control {
+    width: 100%;
+    background: #e4e7eb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #fcfcfc;
+    font-family: 'calibri';
+    font-size: 20px;
+    color: rgb(5, 2, 2);
+  }
+  
+  .registro p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .registro a {
+    text-align: center;
+    color: rgb(86, 220, 238);
+    text-decoration: none;
+  }
+  
+  .registro a:hover {
+    color: rgb(70, 23, 240);
+    text-decoration: underline;
+  }
+  
+  .registro .botones {
+    width: 100%;
+    background: hsl(221, 90%, 53%);
+    border: none;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
+.registro .botones:hover{
+    background-color: rgb(1, 70, 173);
+}
+h3{
+    font-weight:normal;
+    font-size: 18px;
+    line-height: 30px;
+    
+
+}
