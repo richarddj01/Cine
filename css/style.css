@@ -11,7 +11,7 @@
 
 
 body{
-	background-image:url("/img/fondo4.png");
+	background-color: rgb(27, 27, 27);
     background-repeat:no-repeat;
     background-size: cover;
 }
@@ -19,9 +19,25 @@ body{
 
 header{
 	width: 100%;
-	height: 90px;
-	background-color: #5a85fc;
+	height: auto;
+    background-image: url(/img/thewaleBn.jpg);
+	
 }
+
+.boton{
+    color:#ef0e0e; 
+    font-size: 2rem;
+}
+
+nav{
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 100%;
+    top: 0;
+}
+
+
+
 .interior{
 	max-width: 100%;
 	padding: 0 10px;
@@ -40,6 +56,10 @@ header{
 	transform: scale(1.1);
 }
 
+img{
+    width: 100%;
+    height: auto;
+}
 
 nav ul a{
     color: rgb(209, 204, 204);
@@ -75,13 +95,36 @@ nav ul a:hover{
     color: #ffc549;
 }
 
+
+.containerimgnav{
+    margin: 5rem;
+    color: white;
+}
+
+main{
+    color: white;
+}
+
+.card-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:740px){
+    .card:not(:first-child){
+        width: 100%;
+        display: none;
+    }
+}
+
+
 /*IMAGEN*/
 
 .src{
   width: 80%;
   height: 80%;
   align-content: center;
- margin-left: 10%;
+  margin-left: 10%;
 }
 #contenedor{
     width: 1017px;
