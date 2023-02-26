@@ -11,35 +11,33 @@
 
 
 body{
-	background-image:url("/img/fondo4.png");
-    background-attachment: fixed;
-        /*queda en la pantalla todo el tiempo sin moverse*/
-        background-repeat: no-repeat;
-        /*hace que la imagen no se repita*/
-        background-position: center;
-        /*centra la imagen*/
-        background-size: cover;
-        /*cubre toda la pantalla*/
+	background-color: rgb(27, 27, 27);
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
 
 header{
 	width: 100%;
-	height: 90px;
-	background-color: #5a85fc;
+	height: auto;
+    background-image: url(../img/thewaleBn.jpg);
+    background-size: cover;
+	
 }
 
-.boton {
-    color: #ef0e0e;
+.boton{
+    color:#ef0e0e; 
     font-size: 2rem;
 }
 
-nav {
+nav{
     display: flex !important;
     justify-content: space-between !important;
     width: 100%;
     top: 0;
 }
+
+
 
 .interior{
 	max-width: 100%;
@@ -59,7 +57,7 @@ nav {
 	transform: scale(1.1);
 }
 
-img {
+img{
     width: 100%;
     height: auto;
 }
@@ -98,26 +96,43 @@ nav ul a:hover{
     color: #ffc549;
 }
 
-.containerimgnav {
+
+.containerimgnav{
     margin: 5rem;
     color: white;
 }
 
-main {
+main{
     color: white;
 }
 
-.card-wrapper {
+.cards-wrapper {
     display: flex;
-    justify-content: space-between;
-}
+    justify-content: center;
+  }
+ 
+  .card {
+    margin: 0 0.5em;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-@media screen and (max-width:740px) {
-    .card:not(:first-child) {
-        width: 100%;
-        display: none;
+  @media screen and(max-width:768) {
+    
+  }
+  @media screen and(min-width: 768px) {
+    .card img {
+      width: 10em;
     }
-}
+  }
+
 
 /*IMAGEN*/
 
@@ -125,67 +140,10 @@ main {
   width: 80%;
   height: 80%;
   align-content: center;
- margin-left: 10%;
+  margin-left: 10%;
 }
 #contenedor{
     width: 1017px;
     margin: 0  auto;
 }
-/*Acerda de y Terminos y condicones textos*/
-.titulo {
-    background: #30323dd3;
-    color: rgb(255, 255, 255);
-    padding: 15px;
-    text-align: center;
-    height: auto;
-}
 
-.parrafos {
-    background: rgb(65, 63, 63);
-    padding: 10px;
-    height: auto;
-    width: 100%;
-    text-align: left;
-    color: rgb(255, 255, 255);
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-
-/*peliculas*/
-.colum {
-    float: left;
-    width: 75%;
-    padding: 5px;
-    color: #ffffff
-}
-
-.columimg {
-    float: left;
-    width: 20.8%;
-    padding: 5px;
-}
-
-.row::after{/*nada*/
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.conte {
-    width: 1050px;
-    margin: 0 auto;
-}
-
-.vid {
-    background: #30323dd8;
-    padding: 10px;
-    margin: auto;
-    width: 45%;
-}
-
-.vid iframe {
-    width: 99%;
-    border: 2px solid #ffffff;
-}
