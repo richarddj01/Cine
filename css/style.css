@@ -123,4 +123,24 @@ main {
   transform: translateY(-50%);
 }
 
+.botoncarsousel{
+  margin-top: 5%;
+  border-radius: 10px;
+  display: flex;
+  background-color: #0000004c;
+  border: none;
+  color: white;
+}
+.botoncarsousel i{
+  font-size: 30px;
+  margin:5px 10px 5px 18px;
+}
+.botoncarsousel p{
+  margin:5px 0px 5px 0;
+  font-size: 18px;
+}
+
+.botoncarsousel:hover{
+  background-color: #ef0e0e;
+}
 
