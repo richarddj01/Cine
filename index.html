@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
+    <header >
       <div class="col-12">
         <nav class="navbar navbar-expand-lg">
           <div class="row">
@@ -48,25 +48,76 @@
             </ul>
           </div>
         </nav>
-        <div class="containerimgnav row">
-          <div class="col-sm-12 col-md-4 col-lg-3 ms-lg-5 ms-md-4">
-            <img src="./img/theWhale.jpeg" alt="" />
+        <div id="carouselNav" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="containerimgnav row">
+                <div class="col-sm-12 col-md-5 col-lg-3 ms-lg-5 ms-md-4">
+                  <img src="./img/theWhale.jpeg" alt="" />
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-7 ms-lg-5 ms-md-4">
+                  <h1>La Ballena (The Whale)</h1>
+                  <p>
+                    The Whale es una película de drama psicológico estadounidense de
+                    2022 dirigida por Darren Aronofsky y escrita por Samuel D. Hunter,
+                    basada en su obra de teatro de 2012 del mismo nombre.Está
+                    protagonizada por Brendan Fraser, Sadie Sink, Hong Chau, Ty
+                    Simpkins y Samantha Morton. En la película, un solitario profesor
+                    de inglés intenta restaurar su relación con su hija adolescente.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="containerimgnav row">
+                <div class="col-sm-12 col-md-5 col-lg-3 ms-lg-5 ms-md-4">
+                  <img src="./img/ant-man.jpg" alt="" />
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-7 ms-lg-5 ms-md-4">
+                  <h1>La Ballena (The Whale)</h1>
+                  <p>
+                    The Whale es una película de drama psicológico estadounidense de
+                    2022 dirigida por Darren Aronofsky y escrita por Samuel D. Hunter,
+                    basada en su obra de teatro de 2012 del mismo nombre.Está
+                    protagonizada por Brendan Fraser, Sadie Sink, Hong Chau, Ty
+                    Simpkins y Samantha Morton. En la película, un solitario profesor
+                    de inglés intenta restaurar su relación con su hija adolescente.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="containerimgnav row">
+                <div class="col-sm-12 col-md-5 col-lg-3 ms-lg-5 ms-md-4">
+                  <img src="./img/avatar.jpg" alt="" />
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-7 ms-lg-5 ms-md-4">
+                  <h1>La Ballena (The Whale)</h1>
+                  <p>
+                    The Whale es una película de drama psicológico estadounidense de
+                    2022 dirigida por Darren Aronofsky y escrita por Samuel D. Hunter,
+                    basada en su obra de teatro de 2012 del mismo nombre.Está
+                    protagonizada por Brendan Fraser, Sadie Sink, Hong Chau, Ty
+                    Simpkins y Samantha Morton. En la película, un solitario profesor
+                    de inglés intenta restaurar su relación con su hija adolescente.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-7 ms-lg-5 ms-md-4">
-            <h1>La Ballena (The Whale)</h1>
-            <p>
-              The Whale es una película de drama psicológico estadounidense de
-              2022 dirigida por Darren Aronofsky y escrita por Samuel D. Hunter,
-              basada en su obra de teatro de 2012 del mismo nombre.Está
-              protagonizada por Brendan Fraser, Sadie Sink, Hong Chau, Ty
-              Simpkins y Samantha Morton. En la película, un solitario profesor
-              de inglés intenta restaurar su relación con su hija adolescente.
-            </p>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselNav" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselNav" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
+
       </div>
     </header>
-    <main class="container">
+    <main class="container mt-5">
       <h2>Peliculas Recomendadas</h2>
       <hr />
       <br />
@@ -75,40 +126,58 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="cards-wrapper">
+                <div class="card ">
+                  <img src="./img/GB.jpeg"  alt="..." />
+                </div>
                 <div class="card">
-                  <img src="./img/GB.jpeg" class="card-img-top" alt="..." />
+                  <img src="./img/Titanic.jpeg"  alt="..." />
+                </div>
+                <div class="card">
+                  <img src="./img/JW.jpeg"  alt="..." />
                 </div>
                 <div class="card d-none d-md-block">
-                  <img src="./img/Titanic.jpeg" class="card-img-top" alt="..." />
+                  <img src="./img/Titanic.jpeg"  alt="..." />
                 </div>
-                <div class="card d-none d-md-block">
-                  <img src="./img/JW.jpeg" class="card-img-top" alt="..." />
+                <div class="card d-none d-lg-block">
+                  <img src="./img/JW.jpeg"  alt="..." />
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="cards-wrapper">
                 <div class="card">
-                  <img src="./img/HEH.jpg" class="card-img-top" alt="..." />
+                  <img src="./img/HEH.jpg" alt="..." />
+                </div>
+                <div class="card">
+                  <img src="./img/BV.jpeg" alt="..." />
+                </div>
+                <div class="card">
+                  <img src="./img/JK.jpg" alt="..." />
                 </div>
                 <div class="card d-none d-md-block">
-                  <img src="./img/BV.jpeg" class="card-img-top" alt="..." />
+                  <img src="./img/BV.jpeg" alt="..." />
                 </div>
-                <div class="card d-none d-md-block">
-                  <img src="./img/JK.jpg" class="card-img-top" alt="..." />
+                <div class="card d-none d-lg-block">
+                  <img src="./img/JK.jpg" alt="..." />
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="cards-wrapper">
+                <div class="card ">
+                  <img src="./img/SH-CHI.jpg" alt="..." />
+                </div>
                 <div class="card">
-                  <img src="./img/SH-CHI.jpg" class="card-img-top" alt="..." />
+                  <img src="./img/BlAda.jpg" alt="..." />
+                </div>
+                <div class="card">
+                  <img src="./img/JW.jpeg" alt="..." />
                 </div>
                 <div class="card d-none d-md-block">
-                  <img src="./img/BlAda.jpg" class="card-img-top" alt="..." />
+                  <img src="./img/BlAda.jpg" alt="..." />
                 </div>
-                <div class="card d-none d-md-block">
-                  <img src="./img/JW.jpeg" class="card-img-top" alt="..." />
+                <div class="card d-none d-lg-block">
+                  <img src="./img/JW.jpeg" alt="..." />
                 </div>
               </div>
             </div>
@@ -175,6 +244,7 @@
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/header.js"></script>
     <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>
