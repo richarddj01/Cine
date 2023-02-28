@@ -17,7 +17,7 @@
         <div class="col-12">
             <nav class="navbar navbar-expand-lg ">
                 <div class="row pr-5 pl-3">
-                    <a class="logo navbar-brand" href="./Series.php?nombre=culo" target="_blank"><img
+                    <a class="logo navbar-brand" href="index.html" target="_blank"><img
                             src="../img/Logo_Cine_sin_fondo2.png" alt=""></a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
@@ -47,6 +47,10 @@
                   <div class="row">
                     <div class="containter text-center pt-3">
                       <h3>Agregar Películas</h3>
+                      <?php
+                        $variable = $_GET['nombre'];
+                      ?>
+                      <h3>La variable es: <?php echo $variable;?></h3>
                       <br>
                         </div>
                             <div class="col-3">
@@ -99,7 +103,7 @@
                   </div>
                   <div class="col-3">
                     <button id="agregar2" class="btn btn-primary btn-danger mb-5 col-md-10 ms-4 mt-2" type="submit">Agregar</button>
-                    <a href="./Series.php?nombre=culo">Agregar</a>
+                  
                   </div>
                    </div>
                  </div>
