@@ -12,7 +12,12 @@
 
 <body>
   <script src="../js/jquery-3.6.3.min.js"></script>
-  <script src="../js/peliculas.js"></script>
+  <script src="../js/carrito_pelicula.js"></script>
+  <!-- Recibir variable con el nombre de la película -->
+  <?php
+    $nombre_pelicula = $_GET['nombre'];
+    $imagen = $_GET['img'];
+  ?>
     <header class="row">
         <div class="col-12">
             <nav class="navbar navbar-expand-lg ">
@@ -45,67 +50,62 @@
               <div class="container text-light  mb-3" >
                 <div class="containter px-4" >
                   <div class="row">
+
                     <div class="containter text-center pt-3">
-                      <h3>Agregar Películas</h3>
-                      <?php
-                        $variable = $_GET['nombre'];
-                      ?>
-                      <h3>La variable es: <?php echo $variable;?></h3>
+                      <h3>Compra de Boletos</h3>
+                      <br>
+                      <hr>
+                      <h3>Pelicula: <?php echo $nombre_pelicula;?></h3>
+                      <hr>
                       <br>
                         </div>
-                            <div class="col-3">
-                                <label for="Nombre" class="form-label">Nombre:</label>
-                                <input id="Nombre" type="text" class="input-group mb-3 form-control">
+                            <div class="col-4">
+                              <img src="../img/<?php echo $imagen?>" alt="" />
                             </div>
-                            <div class="col-3">
-                                <label for="Categoria" class="form-label">Categoria:</label>
-                                <input id="Categoria" type="text" class="input-group mb-3 form-control">
-                            </div>
-                            <div class="col-3">
-                              <label for="Precio" class="form-label">Precio:</label>
-                              <input id="Precio" type="number" class="input-group mb-3 form-control">
-                            </div>
-                            <div class="col-3">
-                                <label for="Cantidad" class="form-label">Cantidad:</label>
-                                <input id="Cantidad" type="number" class="input-group mb-3 form-control">
+                            <div class="col-8">
+                              <div class="row">
+                                <div class="col-7">
+                                    <label for="Categoria" class="form-label">Tipo de Boleto:</label>
+                                    <select name="tipo_boleto" id="tipo_boleto" class="input-group mb-3 form-control">
+                                      <option value=""></option>
+                                      <option value="Niño">Niño</option>
+                                      <option value="Adulto">Adulto</option>
+                                      <option value="Adulto Mayor">Adulto Mayor</option>
+                                    </select>
+                                </div>
+                                <div class="col-2">
+                                    <label for="Cantidad" class="form-label">Cantidad:</label>
+                                    <input id="cantidad" type="number" class="input-group mb-3 form-control">
+                                </div>
+                                <div class="col-3 mt-4">
+                                  <button id="agregar2" class="btn btn-primary btn-danger mt-2 px-5" type="submit">Agregar</button>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="mt-2 pb-2 table-responsive">  
+                                <table id="tabla" class="table table-light table-bordered table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col-6">Tipo de Boleto</th>
+                                      <th scope="col-2">Cantidad</th>
+                                      <th scope="col-4"></th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                  <!-- <tr id="row1">
+                                      <td>2022-12-08</td>
+                                      <td>2022-12-09</td>
+                                      <td>Tacos</td>
+                                      <td>One</td>
+                                      <td><button type="button" name="remove" id="1" class="btn btn-danger btn_remove">Quitar</button><button type="button" name="btnModificar" id="1" class="btn ms-1 btn-danger btn_modificar">Modificar</button>
+                                    </tr>
+                                  -->
+                                  </tbody>
+                                </table>
+                                </div>
+                              </div>
                             </div>
                       </div>
-                 <div class="row">
-                    <div class="col">
-                      <label for="Descripcion" class="form-label">Descripcion:</label>
-                            <input id="Descripcion" type="text" class="input-group mb-3 form-control">
-                      </div>
-                   </div>
-                   <div class="row mt-2">
-                    <div class="col-9 mt-2 pb-2 table-responsive">  
-                      <table id="tabla" class="table table-light table-bordered table-hover">
-                        <thead>
-                          <tr>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Categoría</th>
-                            <th scope="col">Precio</th>
-                            <th scope="col">Cantidad</th>
-                            <th scope="col">Descripción</th>
-                            <th scope="col"></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                        <!-- <tr id="row1">
-                            <td>2022-12-08</td>
-                            <td>2022-12-09</td>
-                            <td>Tacos</td>
-                            <td>One</td>
-                            <td><button type="button" name="remove" id="1" class="btn btn-danger btn_remove">Quitar</button><button type="button" name="btnModificar" id="1" class="btn ms-1 btn-danger btn_modificar">Modificar</button>
-                          </tr>
-                        -->
-                        </tbody>
-                      </table>
-                  </div>
-                  <div class="col-3">
-                    <button id="agregar2" class="btn btn-primary btn-danger mb-5 col-md-10 ms-4 mt-2" type="submit">Agregar</button>
-                  
-                  </div>
-                   </div>
                  </div>
                 </div>
             </div>
