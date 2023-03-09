@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(27, 27, 27);
+    margin-right: 0.7%;
+}
+
+/*pra que no salga la ballena en todo*/
+.header2 {
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    height: auto;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/* BARRA DE NAVEGACION*/
+.logo {
+    float: left;
+    padding: 5px 20px 0;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 100%;
+    top: 0;
+}
+
+nav ul a {
+    color: rgb(209, 204, 204);
+    font-size: 20px;
+    padding: 10px 40px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: rgb(255, 30, 30);
+    border-radius: 4px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+nav ul a:hover::before {
+    color: #ffc549;
+    /*animacion de derecha a izquierda*/
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+nav ul a:hover {
+    color: #ffc549;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*PELICULAS*/
+.imagenfondo1 {
+    background-image: url(../img/gato_con_botas2.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: top center;
+
+}
+
+.imagenfondo2 {
+    background-image: url(../img/the-whale-brendan-fraser-1666613.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: top center;
+
+}
+
+
+.colum {
+    float: left;
+    width: 75%;
+    padding: 7px;
+    color: #ffffff
+}
+
+.columimg {
+    float: left;
+    width: 20.8%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.conte {
+    /*contenedor*/
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.vid {
+    background: rgb(27, 27, 27);
+    padding: 15px;
+    margin: auto;
+    width: 75%;
+}
+
+.vid iframe {
+    width: 99%;
+    border: 2px solid #ffffff;
+}
+
+/*@media screen and (max-width: 319px) {
+    iframe {
+            margin-top: 50%;
+            padding: 15px;
+            margin: auto;
+            width: 65%;
+            height: 300px;
+        }
+    
+        .vid {
+            margin-top: 15cm;
+        }
+    
+        .conte {
+            margin-left: 2%;
+            width: 400px;
+            height: auto;
+        }
+    
+        .columli {
+            float: left;
+            width: 16%;
+            padding: 7px;
+            height: 140px;
+        }
+    
+        .colum {
+            float: left;
+            width: 60%;
+            padding: 7px;
+            height: auto;
+        }
+    
+        .columarriba {
+            float: left;
+            width: 60%;
+            padding: 10px;
+            margin-top: 1%;
+        }
+    
+        .columimg {
+            margin-left: 6%;
+            width: 43%;
+            height: 289px;
+            padding: 10px;
+        }
+    
+        img {
+            width: 100%;
+            height: 100%;
+        }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    iframe {
+            margin-top: 50%;
+            padding: 15px;
+            margin: auto;
+            width: 65%;
+            height: 300px;
+        }
+    
+        .vid {
+            margin-top: 15cm;
+        }
+    
+        .conte {
+            margin-left: 2%;
+            width: 400px;
+            height: auto;
+        }
+    
+        .columli {
+            float: left;
+            width: 16%;
+            padding: 7px;
+            height: 140px;
+        }
+    
+        .colum {
+            float: left;
+            width: 60%;
+            padding: 7px;
+            height: auto;
+        }
+    
+        .columarriba {
+            float: left;
+            width: 60%;
+            padding: 10px;
+            margin-top: 1%;
+        }
+    
+        .columimg {
+            margin-left: 6%;
+            width: 43%;
+            height: 289px;
+            padding: 10px;
+        }
+    
+        img {
+            width: 100%;
+            height: 100%;
+        }
+}*/
+
+@media screen and (max-width: 599px) and (min-width: 481px) {
+
+    iframe {
+        margin-top: 50%;
+        padding: 15px;
+        margin: auto;
+        width: 65%;
+        height: 300px;
+    }
+
+    .vid {
+        margin-top: 14cm;
+    }
+
+    .conte {
+        margin-left: 2%;
+        width: 740px;
+        height: auto;
+    }
+
+    .columli {
+        float: left;
+        width: 16%;
+        padding: 7px;
+        height: 140px;
+    }
+
+    .colum {
+        float: left;
+        width: 60%;
+        padding: 7px;
+    }
+
+    .columarriba {
+        float: left;
+        width: 60%;
+        padding: 10px;
+        margin-top: 1%;
+    }
+
+    .columimg {
+        margin-left: 6%;
+        width: 47%;
+        height: 489px;
+        padding: 30px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+
+    iframe {
+        margin-top: 50%;
+        padding: 15px;
+        margin: auto;
+        width: 35%;
+        height: 300px;
+    }
+
+    .vid {
+        margin-top: 14cm;
+    }
+
+    .conte {
+        margin-left: 2%;
+        width: 740px;
+        height: auto;
+    }
+
+    .columli {
+        float: left;
+        width: 16%;
+        padding: 7px;
+        height: 140px;
+    }
+
+    .colum {
+        margin-left: 10%;
+        float: left;
+        width: 60%;
+        padding: 7px;
+    }
+
+    .columarriba {
+        float: left;
+        width: 60%;
+        padding: 10px;
+        margin-top: 1%;
+    }
+
+    .columimg {
+        margin-left: 17%;
+        width: 47%;
+        height: 489px;
+        padding: 30px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 967px) and (min-width: 769px) {
+
+    iframe {
+        margin-top: 50%;
+        padding: 15px;
+        margin: auto;
+        width: 65%;
+        height: 500px;
+    }
+
+    .vid {
+        margin-top: 10%;
+    }
+
+    .conte {
+        margin-left: 10%;
+
+    }
+
+    .columli{
+        float: left;
+        width: 21%;
+        padding: 7px;
+        height: 379px;
+    }
+
+    .colum {
+        float: left;
+        width: 21%;
+        padding: 7px;
+    }
+
+    img{
+        width: 100%;
+        height: 369px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 968px) {
+
+    iframe {
+        margin-top: 50%;
+        padding: 15px;
+        margin: auto;
+        width: 65%;
+        height: 600px;
+    }
+    
+    .vid{
+        margin-top: 5%;
+    }
+
+    .conte {
+        margin-left: 10%;
+    }
+    
+    .colum {
+        float: left;
+        width: 45%;
+        padding: 7px;
+    }
+
+    .columimg {
+        float: left;
+        width: 24.4%;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+
+    iframe {
+        padding: 15px;
+        margin: auto;
+        width: 65%;
+        height: 600px;
+    }
+
+    .conte{
+        margin-left:3%;
+    }
+
+    .colum{
+        float: left;
+        width: 70%;
+        padding: 7px;
+        color: #ffffff
+    }
+
+}
