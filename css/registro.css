@@ -5,7 +5,7 @@
   }
   
   body {
-    background-image: url('https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_1280.jpg');
+    background-image: url(/img/uni.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
