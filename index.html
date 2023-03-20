@@ -1,310 +1,288 @@
-
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>CinePremier</title>
 
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="./img/logopestaña.png" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <div class="col-12">
-        <nav class="navbar navbar-expand-lg">
-          <div class="row">
-            <a class="logo navbar-brand" href="index.html" target="_blank"
-              ><img src="./img/Logo_Cine_sin_fondo2.png" alt=""
-            /></a>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menu"
-            aria-controls="menu"
-            aria-expandend="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>CinePremier</title>
 
-          <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ms-auto">
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="#">Peliculas</a></li>
-              <li><a href="./modules/ayuda.html">Ayuda</a></li>
-              <li>
-                <a href="./modules/login.html"
-                  ><i class="bx bxs-user-circle boton"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div id="carouselNav" class="carousel slide" data-interval="0">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="containerimgnav row">
-                <div class="col-sm-12 col-md-5 col-lg-3 ms-lg-5 ms-md-4">
-                  <img src="./img/theWhale.jpeg" alt="" />
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-7 ms-lg-5 ms-md-4 mb-4">
-                  <h1>La Ballena (The Whale)</h1>
-                  <p>
-                    The Whale es una película de drama psicológico
-                    estadounidense de 2022 dirigida por Darren Aronofsky y
-                    escrita por Samuel D. Hunter, basada en su obra de teatro de
-                    2012 del mismo nombre.Está protagonizada por Brendan Fraser,
-                    Sadie Sink, Hong Chau, Ty Simpkins y Samantha Morton. En la
-                    película, un solitario profesor de inglés intenta restaurar
-                    su relación con su hija adolescente.
-                  </p>
-                  <div class="row ">
-     
-                    <a button href="./modules/peliculas.php?nombre=LaBallena&img=theWhale.jpeg"class="botoncarsousel col-auto pe-5">
-                      <i class="bx bx-store" ></i>
-                      <p>Comprar Entrada</p>
-                    </a>
-            
-                    <a button href="/modules/pelicula2.html" class="botoncarsousel col-auto pe-4 ms-lg-5" >
-                      <i class='bx bx-info-circle'></i>
-                      <p class="d-sm-flex  d-lg-flex">Mas información</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item "> 
-              <div class="containerimgnav row">
-                <div class="col-sm-12 col-md-5 col-lg-3 ms-lg-5 ms-md-4">
-                  <img src="./img/ant-man.jpg" alt="" />
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-7 ms-lg-5 ms-md-4 mb-4">
-                  <h1>Ant-Man and the Wasp: Quantumania</h1>
-                  <p>
-                    Los superhéroes Scott y Cassie Lang, Hope van Dyne y 
-                    sus padres, se encuentran accidentalmente atrapados en 
-                    el reino cuántico y deben enfrentarse a un nuevo enemigo, Kang el Conquistador,un viajero del tiempo que quiere dominar el multiverso. Para escapar de su poder y regresar a casa, tendrán que usar sus habilidades de cambiar de tamaño y contar con la ayuda de algunos aliados inesperados
-                  </p>
-                  <div class="row ">
-                    <button class="botoncarsousel col-auto pe-5 ">
-                      <i class="bx bx-store" ></i>
-                      <p>Comprar Entrada</p>
-                    </button>
-                    <button class="botoncarsousel col-auto pe-4 ms-lg-5">
-                      <i class='bx bx-info-circle'></i>
-                      <p>Mas información</p>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="containerimgnav row">
-                <div class="col-sm-12 col-md-5 col-lg-3 ms-lg-5 ms-md-4">
-                  <img src="./img/avatar.jpg" alt="" />
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-7 ms-lg-5 ms-md-4 mb-4">
-                  <h1>Avatar 2 (Avatar: The Way of Water)</h1>
-                  <p>
-                    Jake Sully y Ney'tiri han formado una familia y hacen todo lo 
-                    posible por permanecer juntos. Sin embargo, deben abandonar su hogar 
-                    y explorar las regiones de Pandora cuando una antigua amenaza reaparece, el coronel Quaritch, que sobrevivió al ataque de los Na vi y ahora busca venganza. Junto con los Metkayina.
-                  </p>
-                  <div class="row ">
-                    <button class="botoncarsousel col-auto pe-5">
-                      <i class="bx bx-store" ></i>
-                      <p>Comprar Entrada</p>
-                    </button>
-                    <button class="botoncarsousel col-auto pe-4 ms-lg-5 ">
-                      <i class='bx bx-info-circle'></i>
-                      <p>Mas información</p>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselNav"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselNav"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
-        </div>
-      </div>
-    </header>
-    <main class="container mt-5">
-      <h2>Peliculas Recomendadas</h2>
-      <hr />
-      <br />
-      <section class="row">
-        <div id="recomendadas" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="cards-wrapper">
-                <div class="card">
-                  <a href="./modules/pelicula1.html"><img src="./img/GB.jpeg" alt="elgatoconbotas" /></a>
-                </div>
-                <div class="card">
-                  <a href="./modules/peliculas.php?nombre=Titanic&img=Titanic.jpeg"><img src="./img/Titanic.jpeg" alt="titanic" /></a>
-                </div>
-                <div class="card">
-                  <a href="./modules/peliculas.php?nombre=John Wick&img=JW.jpeg"><img src="./img/JW.jpeg" alt="..." /></a>
-                </div>
-                <div class="card d-none d-md-block">
-                  <a href="./modules/peliculas.php?nombre=Hasta el Ultimo Hombre&img=HEH.jpg"><img src="./img/HEH.jpg" alt="..." /></a>
-                </div>
-                <div class="card d-none d-lg-block">
-                  <a href="./modules/peliculas8.html"><img src="./img/JK.jpg" alt="..." /></a>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="cards-wrapper">
-                <div class="card">
-                  <a href="./modules/peliculas9.html"><img src="./img/BV.jpg" alt="..." /></a>
-                </div>
-                <div class="card">
-                  <a href="/modules/pelicula10.html"><img src="./img/SH-CHI.jpg" alt="..." /></a>
-                </div>
-                <div class="card">
-                  <a href="./modules/pelicula11.html"><img src="./img/BlAda.jpg" alt="..." /></a>
-                </div>
-                <div class="card d-none d-md-block">
-                  <a href="./modules/pelicula12.html"><img src="./img/Venom.jpg" alt="..." /></a>
-                </div>
-                <div class="card d-none d-lg-block">
-                  <a href="./modules/pelicula13.html"><img src="./img/Uncharted.jpg" alt="..." /></a>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="cards-wrapper">
-                <div class="card">
-                  <a href="./modules/peliculas14.html"><img src="./img/S-M.jpg" alt="elgatoconbotas" /></a>
-                </div>
-                <div class="card">
-                  <a href="./modules/peliculas15.html"><img src="./img/Luther.jpg" alt="titanic" /></a>
-                </div>
-                <div class="card">
-                  <a href="./modules/peliculas16.html"><img src="./img/Residentevil.jpg" alt="..." /></a>
-                </div>
-                <div class="card d-none d-md-block">
-                  <a href="./modules/peliculas17.html"><img src="./img/Emancipaion.jpg" alt="..." /></a>
-                </div>
-                <div class="card d-none d-lg-block">
-                  <a href="./modules/peliculas18.html"><img src="./img/mandalorian.jpg" alt="..." /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#recomendadas"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#recomendadas"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./img/logopestaña.png" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
 
-      <section class="contenedor_got ">
-        <div class="row infogot">
-          <div class="col-sm-12 col-md-6 order-md-2 ">
-            <img src="./img/got.jpg" class="got"  alt="">
-          </div>
-          <div class="col-sm-12 col-md-5 ms-md-4 mt-4 mt-md-0 order-md-1 ">
-            <h2>Game of Trones</h2>
-            <p>Game of Thrones es una serie de televisión que ha cautivado a millones de espectadores en todo el mundo con su mezcla de drama, acción y fantasía.</p>
-            <p class="hide" id="verText">Ambientada en un mundo imaginario, la historia sigue las luchas por el poder entre diversas casas nobles mientras un peligroso enemigo se acerca desde el norte. </p> <p class="hide2" id="verText2"> Con personajes complejos y profundos, giros inesperados y una narrativa apasionante, Game of Thrones es una experiencia televisiva que te mantiene al borde de tu asiento hasta el último momento</p>
-
-            <button class="mt-3 leer-mas" id="verBtn">Leer mas</button>
-          </div>
-        </div>
-      </section>
-    </main>
-    
-    
-    <footer class="bg-dark text-white mt-4 pt-5 pb-5">
-      <div class="container">
+<body>
+  <header>
+    <div class="col-12">
+      <nav class="navbar navbar-expand-lg">
         <div class="row">
-          <div class="col-md-4">
-            <h3>Contacto</h3>
-            <ul class="list-unstyled">
-              <li>1234-5678</li>
-              <li>info@unicah.edu</li>
-              <li>Santa Rosa de Copan, Honduras.</li>
-            </ul>
+          <a class="logo navbar-brand" href="index.html" target="_blank"><img src="./img/Logo_Cine_sin_fondo2.png"
+              alt="" /></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-expandend="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Peliculas</a></li>
+            <li><a href="./modules/ayuda.html">Ayuda</a></li>
+            <li>
+              <a href="./modules/login.html"><i class="bx bxs-user-circle boton"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="carouselNav" class="carousel slide" data-interval="0">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="containerimgnav row">
+              <div class="col-sm-12 col-md-5 col-lg-3 ms-lg-5 ms-md-4">
+                <img src="./img/theWhale.jpeg" alt="" />
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-7 ms-lg-5 ms-md-4 mb-4">
+                <h1>La Ballena (The Whale)</h1>
+                <p>
+                  The Whale es una película de drama psicológico
+                  estadounidense de 2022 dirigida por Darren Aronofsky y
+                  escrita por Samuel D. Hunter, basada en su obra de teatro de
+                  2012 del mismo nombre.Está protagonizada por Brendan Fraser,
+                  Sadie Sink, Hong Chau, Ty Simpkins y Samantha Morton. En la
+                  película, un solitario profesor de inglés intenta restaurar
+                  su relación con su hija adolescente.
+                </p>
+                <div class="row ">
+
+                  <a button href="./modules/peliculas.php?nombre=La Ballena&img=theWhale.jpeg"
+                    class="botoncarsousel col-auto pe-5">
+                    <i class="bx bx-store"></i>
+                    <p>Comprar Entrada</p>
+                  </a>
+
+                  <a button href="/modules/pelicula2.html" class="botoncarsousel col-auto pe-4 ms-lg-5">
+                    <i class='bx bx-info-circle'></i>
+                    <p class="d-sm-flex  d-lg-flex">Mas información</p>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <h3>Síguenos en</h3>
-            <ul class="list-unstyled">
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Youtube</a></li>
-            </ul>
+          <div class="carousel-item ">
+            <div class="containerimgnav row">
+              <div class="col-sm-12 col-md-5 col-lg-3 ms-lg-5 ms-md-4">
+                <img src="./img/ant-man.jpg" alt="" />
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-7 ms-lg-5 ms-md-4 mb-4">
+                <h1>Ant-Man and the Wasp: Quantumania</h1>
+                <p>
+                  Los superhéroes Scott y Cassie Lang, Hope van Dyne y
+                  sus padres, se encuentran accidentalmente atrapados en
+                  el reino cuántico y deben enfrentarse a un nuevo enemigo, Kang el Conquistador,un viajero del tiempo
+                  que quiere dominar el multiverso. Para escapar de su poder y regresar a casa, tendrán que usar sus
+                  habilidades de cambiar de tamaño y contar con la ayuda de algunos aliados inesperados
+                </p>
+                <div class="row ">
+                  <a button
+                    href="./modules/peliculas.php?nombre=Ant Man and the Wasp Quantumania&image=p_antmanquantumania_update_1006.jpg"
+                    class="botoncarsousel col-auto pe-5 ">
+                    <i class="bx bx-store"></i>
+                    <p>Comprar Entrada</p>
+                  </a>
+                  <a button href="../modules/peliculas22.html" class="botoncarsousel col-auto pe-4 ms-lg-5">
+                    <i class='bx bx-info-circle'></i>
+                    <p>Mas información</p>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <h3>Mas información:</h3>
-            <ul class="list-unstyled">
-              <li>
-                <a href="./modules/termycond.html">Terminos y Condiciones</a>
-              </li>
-              <li><a href="./modules/acercade.html">Acerca de</a></li>
-            </ul>
+          <div class="carousel-item">
+            <div class="containerimgnav row">
+              <div class="col-sm-12 col-md-5 col-lg-3 ms-lg-5 ms-md-4">
+                <img src="./img/avatar.jpg" alt="" />
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-7 ms-lg-5 ms-md-4 mb-4">
+                <h1>Avatar 2 (Avatar: The Way of Water)</h1>
+                <p>
+                  Jake Sully y Ney'tiri han formado una familia y hacen todo lo
+                  posible por permanecer juntos. Sin embargo, deben abandonar su hogar
+                  y explorar las regiones de Pandora cuando una antigua amenaza reaparece, el coronel Quaritch, que
+                  sobrevivió al ataque de los Na vi y ahora busca venganza. Junto con los Metkayina.
+                </p>
+                <div class="row ">
+                  <a button href="./modules/peliculas.php?nombre=Avatar 2&image=480_52y61c.jpg"
+                    class="botoncarsousel col-auto pe-5">
+                    <i class="bx bx-store"></i>
+                    <p>Comprar Entrada</p>
+                  </a>
+                  <a button href="../modules/peliculas23.html" class="botoncarsousel col-auto pe-4 ms-lg-5 ">
+                    <i class='bx bx-info-circle'></i>
+                    <p>Mas información</p>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <hr />
-        <p class="text-center">Derechos Reservados &copy; 2023 UNICAH</p>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNav" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselNav" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
-    </footer>
+    </div>
+  </header>
+  <main class="container mt-5">
+    <h2>Peliculas Recomendadas</h2>
+    <hr />
+    <br />
+    <section class="row">
+      <div id="recomendadas" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+              <div class="card">
+                <a href="./modules/pelicula1.html"><img src="./img/GB.jpeg" alt="elgatoconbotas" /></a>
+              </div>
+              <div class="card">
+                <a href="./modules/peliculas21.html"><img src="./img/Titanic.jpeg" alt="titanic" /></a>
+              </div>
+              <div class="card">
+                <a href="./modules/peliculas20.html"><img src="./img/JW.jpeg" alt="..." /></a>
+              </div>
+              <div class="card d-none d-md-block">
+                <a href="./modules/peliculas19.html"><img src="./img/HEH.jpg" alt="..." /></a>
+              </div>
+              <div class="card d-none d-lg-block">
+                <a href="./modules/peliculas8.html"><img src="./img/JK.jpg" alt="..." /></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <a href="./modules/peliculas9.html"><img src="./img/BV.jpg" alt="..." /></a>
+              </div>
+              <div class="card">
+                <a href="/modules/pelicula10.html"><img src="./img/SH-CHI.jpg" alt="..." /></a>
+              </div>
+              <div class="card">
+                <a href="./modules/pelicula11.html"><img src="./img/BlAda.jpg" alt="..." /></a>
+              </div>
+              <div class="card d-none d-md-block">
+                <a href="./modules/pelicula12.html"><img src="./img/Venom.jpg" alt="..." /></a>
+              </div>
+              <div class="card d-none d-lg-block">
+                <a href="./modules/pelicula13.html"><img src="./img/Uncharted.jpg" alt="..." /></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <a href="./modules/peliculas14.html"><img src="./img/S-M.jpg" alt="elgatoconbotas" /></a>
+              </div>
+              <div class="card">
+                <a href="./modules/peliculas15.html"><img src="./img/Luther.jpg" alt="titanic" /></a>
+              </div>
+              <div class="card">
+                <a href="./modules/peliculas16.html"><img src="./img/Residentevil.jpg" alt="..." /></a>
+              </div>
+              <div class="card d-none d-md-block">
+                <a href="./modules/peliculas17.html"><img src="./img/Emancipaion.jpg" alt="..." /></a>
+              </div>
+              <div class="card d-none d-lg-block">
+                <a href="./modules/peliculas18.html"><img src="./img/mandalorian.jpg" alt="..." /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#recomendadas" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#recomendadas" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/leermas.js"></script>
-    <script src="./js/header.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+    <section class="contenedor_got ">
+      <div class="row infogot">
+        <div class="col-sm-12 col-md-6 order-md-2 ">
+          <img src="./img/got.jpg" class="got" alt="">
+        </div>
+        <div class="col-sm-12 col-md-5 ms-md-4 mt-4 mt-md-0 order-md-1 ">
+          <h2>Game of Trones</h2>
+          <p>Game of Thrones es una serie de televisión que ha cautivado a millones de espectadores en todo el mundo con
+            su mezcla de drama, acción y fantasía.</p>
+          <p class="hide" id="verText">Ambientada en un mundo imaginario, la historia sigue las luchas por el poder
+            entre diversas casas nobles mientras un peligroso enemigo se acerca desde el norte. </p>
+          <p class="hide2" id="verText2"> Con personajes complejos y profundos, giros inesperados y una narrativa
+            apasionante, Game of Thrones es una experiencia televisiva que te mantiene al borde de tu asiento hasta el
+            último momento</p>
+
+          <button class="mt-3 leer-mas" id="verBtn">Leer mas</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="bg-dark text-white mt-4 pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Contacto</h3>
+          <ul class="list-unstyled">
+            <li>1234-5678</li>
+            <li>info@unicah.edu</li>
+            <li>Santa Rosa de Copan, Honduras.</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Síguenos en</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Mas información:</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="./modules/termycond.html">Terminos y Condiciones</a>
+            </li>
+            <li><a href="./modules/acercade.html">Acerca de</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="text-center">Derechos Reservados &copy; 2023 UNICAH</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="./js/leermas.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
-
