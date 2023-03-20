@@ -2,90 +2,91 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CinePremier</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CinePremier</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../img/logopestaña.png" type="image/x-icon">
 </head>
 
 <body>
   <script src="../js/jquery-3.6.3.min.js"></script>
   <script src="../js/peliculas.js"></script>
-    <header class="row">
-        <div class="col-12">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="row pr-5 pl-3">
-                    <a class="logo navbar-brand" href="./Series.php?nombre=culo&img=GB.jpeg" target="_blank"><img
-                            src="../img/Logo_Cine_sin_fondo2.png" alt=""></a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                    aria-controls="menu" aria-expandend="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span>
-                </button>
+  <header class="row">
+    <div class="col-12">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="row pr-5 pl-3">
+          <a class="logo navbar-brand" href="./Series.php?nombre=culo&img=GB.jpeg" target="_blank"><img
+              src="../img/Logo_Cine_sin_fondo2.png" alt=""></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-expandend="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span>
+        </button>
 
-                <div class="collapse navbar-collapse " id="menu">
-                    <ul class="navbar-nav ms-auto">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="">Peliculas</a></li>
-                        <li><a href="">Ayuda</a></li>
-                        <li><a href="../modules/login.html">Login</a></li>
-                    </ul>
+        <div class="collapse navbar-collapse " id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="">Peliculas</a></li>
+            <li><a href="">Ayuda</a></li>
+            <li><a href="../modules/login.html">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div><br>
+    </div>
+    <div>
+      <br>
+      <section>
+        <center>
+          <div class="container text-light  mb-3">
+            <div class="containter px-4">
+              <div class="row">
+                <div class="containter text-center pt-3">
+                  <h3>Agregar Películas</h3>
+                  <br>
                 </div>
-            </nav>
-        </div>
-        <div><br>
-        </div>
-        <div>
-            <br>
-        <section>
-            <center>
-              <div class="container text-light  mb-3" >
-                <div class="containter px-4" >
-                  <div class="row">
-                    <div class="containter text-center pt-3">
-                      <h3>Agregar Películas</h3>
-                      <br>
-                        </div>
-                            <div class="col-3">
-                                <label for="Nombre" class="form-label">Nombre:</label>
-                                <input id="Nombre" type="text" class="input-group mb-3 form-control">
-                            </div>
-                            <div class="col-3">
-                                <label for="Categoria" class="form-label">Categoria:</label>
-                                <input id="Categoria" type="text" class="input-group mb-3 form-control">
-                            </div>
-                            <div class="col-3">
-                              <label for="Precio" class="form-label">Precio:</label>
-                              <input id="Precio" type="number" class="input-group mb-3 form-control">
-                            </div>
-                            <div class="col-3">
-                                <label for="Cantidad" class="form-label">Cantidad:</label>
-                                <input id="Cantidad" type="number" class="input-group mb-3 form-control">
-                            </div>
-                      </div>
-                 <div class="row">
-                    <div class="col">
-                      <label for="Descripcion" class="form-label">Descripcion:</label>
-                            <input id="Descripcion" type="text" class="input-group mb-3 form-control">
-                      </div>
-                   </div>
-                   <div class="row mt-2">
-                    <div class="col-9 mt-2 pb-2 table-responsive">  
-                      <table id="tabla" class="table table-light table-bordered table-hover">
-                        <thead>
-                          <tr>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Categoría</th>
-                            <th scope="col">Precio</th>
-                            <th scope="col">Cantidad</th>
-                            <th scope="col">Descripción</th>
-                            <th scope="col"></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                        <!-- <tr id="row1">
+                <div class="col-3">
+                  <label for="Nombre" class="form-label">Nombre:</label>
+                  <input id="Nombre" type="text" class="input-group mb-3 form-control">
+                </div>
+                <div class="col-3">
+                  <label for="Categoria" class="form-label">Categoria:</label>
+                  <input id="Categoria" type="text" class="input-group mb-3 form-control">
+                </div>
+                <div class="col-3">
+                  <label for="Precio" class="form-label">Precio:</label>
+                  <input id="Precio" type="number" class="input-group mb-3 form-control">
+                </div>
+                <div class="col-3">
+                  <label for="Cantidad" class="form-label">Cantidad:</label>
+                  <input id="Cantidad" type="number" class="input-group mb-3 form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <label for="Descripcion" class="form-label">Descripcion:</label>
+                  <input id="Descripcion" type="text" class="input-group mb-3 form-control">
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-9 mt-2 pb-2 table-responsive">
+                  <table id="tabla" class="table table-light table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- <tr id="row1">
                             <td>2022-12-08</td>
                             <td>2022-12-09</td>
                             <td>Tacos</td>
@@ -93,62 +94,63 @@
                             <td><button type="button" name="remove" id="1" class="btn btn-danger btn_remove">Quitar</button><button type="button" name="btnModificar" id="1" class="btn ms-1 btn-danger btn_modificar">Modificar</button>
                           </tr>
                         -->
-                        </tbody>
-                      </table>
-                  </div>
-                  <div class="col-3">
-                    <button id="agregar2" class="btn btn-primary btn-danger mb-5 col-md-10 ms-4 mt-2" type="submit">Agregar</button>
-                    <a href="./Series.php?nombre=culo">Agregar</a>
-                  </div>
-                   </div>
-                 </div>
+                    </tbody>
+                  </table>
                 </div>
+                <div class="col-3">
+                  <button id="agregar2" class="btn btn-primary btn-danger mb-5 col-md-10 ms-4 mt-2"
+                    type="submit">Agregar</button>
+                  <a href="./Series.php?nombre=culo">Agregar</a>
+                </div>
+              </div>
             </div>
           </div>
-            </center>
-        </section>
-        </div>
-        
-        
-        <div><br><br><br><br><br><br><br><br><br></div>
-        <footer class="bg-dark text-white">
-          <br>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h3>Contacto</h3>
-                        <ul class="list-unstyled">
-                            <li> 1234-5678</li>
-                            <li>info@unicah.edu</li>
-                            <li>Santa Rosa de Copan, Honduras.</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Síguenos en</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Youtube</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Mas información:</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="./termycond.html">Terminos y Condiciones</a></li>
-                            <li><a href="./acercade.html">Acerca de</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <hr>
-                <p class="text-center">Derechos Reservados &copy; 2023 UNICAH</p>
-            </div>
-        </footer>
+    </div>
+    </div>
+    </center>
+    </section>
+    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-            crossorigin="anonymous"></script>
-        <script src="../js/bootstrap.js"></script>
+
+    <div><br><br><br><br><br><br><br><br><br></div>
+    <footer class="bg-dark text-white">
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Contacto</h3>
+            <ul class="list-unstyled">
+              <li> 1234-5678</li>
+              <li>info@unicah.edu</li>
+              <li>Santa Rosa de Copan, Honduras.</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Síguenos en</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Mas información:</h3>
+            <ul class="list-unstyled">
+              <li><a href="./termycond.html">Terminos y Condiciones</a></li>
+              <li><a href="./acercade.html">Acerca de</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="text-center">Derechos Reservados &copy; 2023 UNICAH</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.js"></script>
 </body>
 
 </html>
