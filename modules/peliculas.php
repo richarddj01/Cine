@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CinePremier</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
 </head>
 
 <body>
@@ -33,9 +33,8 @@
                 <div class="collapse navbar-collapse " id="menu">
                     <ul class="navbar-nav ms-auto">
                         <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="">Peliculas</a></li>
-                        <li><a href="">Series</a></li>
-                        <li><a href="">Ayuda</a></li>
+                        <li><a href="../index.html">Peliculas</a></li>
+                        <li><a href="./ayuda.html">Ayuda</a></li>
                         <li><a href="../modules/login.html">Login</a></li>
                     </ul>
                 </div>
