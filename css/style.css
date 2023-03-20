@@ -191,6 +191,7 @@ a{
   padding: 5rem 5rem 5rem 5rem;
 }
 
+
 .leer-mas{
   background-color: transparent;
   color: white;
@@ -198,11 +199,28 @@ a{
   border-radius: 5px;
   padding: 10px 20px 10px 20px;
 }
-
-
-
+ 
 .leer-mas:hover{
   color: rgb(8, 15, 14);
   background-color: rgb(255, 255, 255);
   transition: background-color 1s ease-in-out;
+}
+
+.galery{
+  display: flex;
+  gap: 1;
+}
+
+.galery img{
+  height: 20rem;
+  flex: 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all .8s;
+}
+
+.galery img:hover{
+  flex: 5;
 }
