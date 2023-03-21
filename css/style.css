@@ -210,34 +210,17 @@ a {
   position: relative;
 }
 
-
-
-
 @media screen and (min-width: 960px) {
   .galery {
     display: flex;
     height: 18rem;
     gap: 1rem;
-    
   }
 
-  .items-img img{
+  .items-img img {
     object-fit: cover;
     object-position: left;
     height: 100%;
-  }
-
-  .items-img img:hover {
-    -webkit-mask-image: linear-gradient(
-      to right,
-      rgb(250, 4, 4) 0%,
-      rgba(0, 0, 0, 0) 100%
-    );
-    mask-image: linear-gradient(
-      to right,
-      rgb(254, 0, 0) 0%,
-      rgba(0, 0, 0, 0) 100%
-    );
   }
 
   .items-img {
@@ -246,28 +229,75 @@ a {
     background-position: left;
     background-repeat: no-repeat;
     background-size: auto 100%;
-    transition: all .8s ;
+    transition: all 0.5s;
   }
-  .items-img:hover{
-    flex: 2.2;
+  .items-img:hover {
+    flex: 5;
   }
-  
-  
+
   .galery .items-img:hover .infopeli {
     display: block;
   }
 }
+
 .infopeli {
   position: absolute;
-  background-color: #0a0a0ae1;
-  top: 8%;
-  width: 50%;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.235),
+    rgba(0, 0, 0, 0.892),
+    rgb(0, 0, 0),
+    rgb(0, 0, 0)
+  );
+  top: 50%;
+  width: 60%;
+  padding: 6%;
+  height: 100%;
   right: 0%;
   transform: translate(0%, -50%);
   z-index: 1;
   color: white;
-  font-size: 2.4rem;
   text-align: center;
   display: none;
 }
 
+.list-unstyled a {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+.list-unstyled p {
+  margin: 0;
+}
+
+.icon-fa {
+  background-size: 200% auto;
+  background-image: linear-gradient(to left, #0283ce 50%, transparent 50%);
+  transition: all 0.6s ease-out;
+}
+
+[class^="icon-"]:hover {
+  border-radius: 1rem;
+  background-position: -100% center;
+}
+
+.icon-ig {
+  background-size: 200% auto;
+  background-image: linear-gradient(to left, #cb02ce 50%, transparent 50%);
+  transition: all 0.6s ease-out;
+}
+
+.icon-whats {
+  background-size: 200% auto;
+  background-image: linear-gradient(to left, #02ce6b 50%, transparent 50%);
+  transition: all 0.6s ease-out;
+}
+
+
+.list-unstyled i {
+  font-size: 1.2rem;
+  color: white;
+  margin-right: 6%;
+}
