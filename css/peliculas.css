@@ -18,6 +18,21 @@ header {
     background-size: cover;
 }
 
+.boton {
+    color: #ef0e0e;
+    font-size: 2rem;
+}
+
+nav {
+    position: relative !important;
+    z-index: 1;
+    display: flex !important;
+    justify-content: space-between !important;
+    background: linear-gradient(to bottom, #020202, rgba(0, 0, 0, 0));
+    width: 100%;
+    top: 0;
+}
+
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /* BARRA DE NAVEGACION*/
 .logo {
@@ -55,7 +70,7 @@ nav ul a {
 }
 
 nav ul a::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
@@ -78,6 +93,105 @@ nav ul a:hover::before {
 nav ul a:hover {
     color: #ffc549;
 }
+
+.containerimgnav {
+    margin: 5rem 2rem 0;
+    color: white;
+}
+
+main {
+    color: white;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 0 0.5em;
+    border-radius: 10px;
+}
+
+.card img {
+    border-radius: 10px;
+}
+
+/*FOOTER*/
+/*----------------------------------------------------------------------------------------------------------------*/
+.list-unstyled a {
+    width: auto;
+    padding: 4px;
+    color: white;
+}
+
+.logonav img {
+    margin-left: -2%;
+    width: 80%;
+    height: auto;
+}
+
+.list-unstyled i {
+    padding: 5px;
+}
+
+.icon-fa i:hover {
+    border-radius: 30%;
+    padding: 5px;
+    background-color: #0283ce;
+}
+
+.icon-twit i:hover {
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #0283ce;
+}
+
+.icon-ig i:hover {
+    border-radius: 50%;
+    background-color: #cb02ce;
+    padding: 5px;
+}
+
+.icon-whats i:hover {
+    border-radius: 40%;
+    background-color: #02ce6b;
+    padding: 5px;
+}
+
+
+.list-unstyled i {
+    font-size: 1.2rem;
+    color: white;
+    margin-right: 6%;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contactos {
+    padding: 0;
+
+}
+
+.info {
+
+    display: flex;
+}
+
+.info p {
+    margin: 0;
+    margin-left: 10px;
+}
+
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
 /*PELICULAS*/
@@ -250,23 +364,6 @@ nav ul a:hover {
     background-size: cover;
     background-position: top center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .imagenfondo2 {
     background-image: url(../img/the-whale-brendan-fraser-1666613.png);
