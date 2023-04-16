@@ -2,10 +2,16 @@
 include('conexion.php');
 
 // Agarrar los datos del Input
-$nombre = $_POST['nombre'];
-$correo = $_POST['emai2'];
-$contrasena = $_POST['contrasen'];
-$telefono = $_POST['telefon'];
+$nombre = trim($_POST['nombre']);
+$correo = trim($_POST['emai2']);
+$contrasena = trim($_POST['contrasen']);
+$telefono = trim($_POST['telefon']);
+
+// Validar que no haya campos vacíos
+if (empty($nombre) || empty($correo) || empty($contrasena) || empty($telefono)) {
+  echo "<script> alert('Por favor, llene todos los campos'); window.location.href='registro2.php'; </script>";
+  exit();
+}
 
 // Verificar si el correo electrónico ya existe en la base de datos
 $sql = "SELECT correo FROM usuarios WHERE correo = ?";
