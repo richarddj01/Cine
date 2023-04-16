@@ -1,4 +1,3 @@
-jose fortin
 <?php
 include('conexion.php');
 
