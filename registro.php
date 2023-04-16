@@ -16,7 +16,7 @@ $resultado = mysqli_stmt_get_result($stmt);
 
 if (mysqli_num_rows($resultado) > 0) {
   // El correo electrónico ya existe en la base de datos, mostrar mensaje de error
-  echo "El correo electrónico ingresado ya existe.";
+  echo "<script> alert('El correo ya existe'); window.location.href='registro2.php'; </script>";
 } else {
   // El correo electrónico no existe en la base de datos, insertar los datos en la tabla "usuarios"
   $sql = "INSERT INTO usuarios (nombre, correo, contrasena, telefono) VALUES (?, ?, ?, ?)";
