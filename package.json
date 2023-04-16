@@ -1,0 +1,15 @@
+{
+  "name": "cine-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "purgecss --css css/style.css --content index.html -o css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
