@@ -24,7 +24,18 @@ if (mysqli_num_rows($resultado) > 0) {
   // El correo electrónico ya existe en la base de datos, mostrar mensaje de error
   echo "<script> alert('El correo ya existe'); window.location.href='registro2.php'; </script>";
 } else {
-  // El correo electrónico no existe en la base de datos, insertar los datos en la tabla "usuarios"
+  // Validar la contraseña
+  if (strlen($contrasena) < 8) {
+    echo "<script> alert('La contraseña debe tener al menos 8 caracteres'); window.location.href='registro2.php'; </script>";
+    exit();
+  }
+
+  if (!preg_match('/[a-z]/', $contrasena) || !preg_match('/[A-Z]/', $contrasena) || !preg_match('/[0-9]/', $contrasena)) {
+    echo "<script> alert('La contraseña debe contener letras mayúsculas, minúsculas y números'); window.location.href='registro2.php'; </script>";
+    exit();
+  }
+
+  // El correo electrónico no existe en la base de datos y la contraseña es válida, insertar los datos en la tabla "usuarios"
   $sql = "INSERT INTO usuarios (nombre, correo, contrasena, telefono) VALUES (?, ?, ?, ?)";
   $stmt = mysqli_prepare($conexion, $sql);
   mysqli_stmt_bind_param($stmt, "ssss", $nombre, $correo, $contrasena, $telefono);
